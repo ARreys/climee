@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>climee</title>
+</head>
+
+<body>
+    <div class="center">
+        <input placeholder="Type your city" class="input" type="text" id="search-camp">
+        <button class="input" id="search-bt"><i data-feather="search"></i></button>
+    </div>
+    <div class="city">
+        <img src="./assets/sun.svg" id="icon">
+        <h1 id="city-name">- -</h1>
+        <h2 id="city-temp">/ º</h2>
+    </div>
+    <div class="data-city">
+        <div class="clima center">
+            <span id="weather-main">/</span>
+        </div>
+        <div class="row">
+            <span id="temp-max">Temperatura max: /º</span>
+            <span id="temp-min">Temperatura max: /º</span>
+        </div>
+        <div class="row">
+            <span id="wind-speed"> Velocidade do vento: /m/s</span>
+            <span id="humidity">Humidade: /%</span>
+        </div>
+        <div class="row">
+            <span id="long">Longitde: /º</span>
+            <span id="lat">Latitude: /º</span>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
