@@ -15,7 +15,6 @@ function img(parameter) {
 
 async function data(parameter) {
     await getWeather(parameter).then(function(results) {
-        console.log(results)
         doc("city-name", results.data.name);
         doc("city-temp", results.data.main.temp + "ºC");
         doc("weather-main", results.data.weather[0].main);
